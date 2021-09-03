@@ -32,4 +32,10 @@
     <select id="queryAllBook" resultType="Books">
         SELECT * from ssmbuild.books
     </select>
+
+    <!--String 类型可以不写-->
+    <select id="queryBookBuName" resultType="Books">
+       select * from ssmbuild.books
+       where bookName =#{bookName}
+    </select>
 </mapper>
